@@ -4,6 +4,8 @@ const { Sequelize } = require('sequelize')
 const sequelize = new Sequelize(
   'postgres://postgres://esgi_cloud_exam_postgree_37604_user:alEslNW4f44kteJjdJPWZ8eMN7nBs599@dpg-co5taa6v3ddc7396cle0-a/esgi_cloud_exam_postgree_37604', // TODO
   {
+    username: process.env.username,
+    password: process.env.password,
     dialectOptions: {
       ssl: {
         require: true,
